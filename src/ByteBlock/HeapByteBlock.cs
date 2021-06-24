@@ -12,6 +12,7 @@
 
             Length = size;
             _ptrMem = Marshal.AllocHGlobal(size);
+            GC.AddMemoryPressure(size);
 
             if (clean) Unsafe.InitBlock(_ptrMem.ToPointer(), 0, (uint)size);
         }
