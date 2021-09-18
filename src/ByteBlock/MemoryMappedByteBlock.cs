@@ -46,7 +46,10 @@ public sealed unsafe class MemoryMappedByteBlock : IByteBlock {
 
     public int Length { get; private set; }
 
-    public Span<byte> GetSpan() => new(_ptrMemMap, Length);
+    public Span<byte> AsSpan() => new(_ptrMemMap, Length);
+
+    public UnmanagedMemoryStream AsStream()
+        => new(_ptrMemMap, Length,  Length, FileAccess.ReadWrite);
 
     public void Dispose() {
         Flush();

@@ -13,9 +13,9 @@
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 		<RepositoryUrl>https://github.com/krivil/ByteBlock.git</RepositoryUrl>
-		<Copyright>Copyright © 2020 Kiril Markov</Copyright>
+		<Copyright>Copyright © 2021 Kiril Markov</Copyright>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>0.1.0</Version>
+		<Version>0.2.0</Version>
 	</PropertyGroup>
 
 </Project>

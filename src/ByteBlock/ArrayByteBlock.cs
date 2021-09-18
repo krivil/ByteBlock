@@ -1,6 +1,8 @@
 ﻿namespace ByteBlock;
 
 using System;
+using System.IO;
+using System.Runtime.CompilerServices;
 
 public sealed class ArrayByteBlock : IByteBlock {
     public const int MaxByteArraySize = 0x7FFFFFC7;
@@ -19,5 +21,9 @@ public sealed class ArrayByteBlock : IByteBlock {
 
     public void Dispose() { } // Fully managed
 
-    public Span<byte> GetSpan() => _array.AsSpan();
+    public Span<byte> AsSpan() => _array.AsSpan();
+
+    public unsafe UnmanagedMemoryStream AsStream() 
+        => new((byte*)Unsafe.AsPointer(ref _array[0]), 
+            _array.Length, _array.Length, FileAccess.ReadWrite);
 }

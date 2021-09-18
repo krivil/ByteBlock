@@ -1,6 +1,7 @@
 ﻿namespace ByteBlock;
 
 using System;
+using System.IO;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -20,7 +21,11 @@ public sealed unsafe class HeapByteBlock : IByteBlock {
 
     public int Length { get; private set; }
 
-    public Span<byte> GetSpan() => new(_ptrMem.ToPointer(), Length);
+    public Span<byte> AsSpan() => new(_ptrMem.ToPointer(), Length);
+
+    public UnmanagedMemoryStream AsStream()
+        => new((byte*)_ptrMem.ToPointer(),
+            Length, Length, FileAccess.ReadWrite);
 
     public void Dispose() {
         ReleaseUnmanagedResources();
