@@ -31,6 +31,6 @@ jobs:
     - name: Create the package
       run: dotnet pack --no-build --configuration Release
     - name: Publish the package in GutHub packages
-      run: dotnet nuget push src/ByteBlock/bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s https://nuget.pkg.github.com/krivil/index.json
+      run: dotnet nuget push src/ByteBlock/bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s https://nuget.pkg.github.com/krivil/index.json --skip-duplicate
       env:
         NUGET_AUTH_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}

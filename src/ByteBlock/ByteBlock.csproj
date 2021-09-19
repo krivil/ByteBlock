@@ -1,21 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
-		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-		<Nullable>enable</Nullable>
-		<WarningsAsErrors>nullable</WarningsAsErrors>
-    
-	</PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>nullable</WarningsAsErrors>
+  </PropertyGroup>
 
-	<PropertyGroup>
-		<Authors>Kiril Markov</Authors>
-		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-		<RepositoryUrl>https://github.com/krivil/ByteBlock.git</RepositoryUrl>
-		<Copyright>Copyright © 2021 Kiril Markov</Copyright>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>0.2.0</Version>
-	</PropertyGroup>
+  <PropertyGroup>
+    <Authors>krivil</Authors>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageDescription>Diferent buffers of bytes. Array, Heap and Memory mapped file implementastions</PackageDescription>
+    <PackageTags>Unmanaged;Byte;Buffer;Memory mapped file;Heap</PackageTags>
+    <PackageReleaseNotes>Changed some metadata in package</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/krivil/ByteBlock</RepositoryUrl>
+    <Copyright>Copyright © 2021 Kiril Markov</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.2.1</Version>
+  </PropertyGroup>
 
 </Project>
