@@ -16,7 +16,7 @@
     <PackageReleaseNotes>Added SourceLink</PackageReleaseNotes>
     <Copyright>Copyright © 2021 Kiril Markov</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.2.2</Version>
+    <Version>0.2.3</Version>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
   </PropertyGroup>
 
