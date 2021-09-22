@@ -13,10 +13,10 @@
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageDescription>Different buffers of bytes. Array, unmanaged heap and memory mapped file implementations.</PackageDescription>
     <PackageTags>unmanaged;byte;buffer;memory mapped file;heap</PackageTags>
-    <PackageReleaseNotes>Added SourceLink</PackageReleaseNotes>
+    <PackageReleaseNotes>MemoryMappedByteBlock now verifies file length.</PackageReleaseNotes>
     <Copyright>Copyright © 2021 Kiril Markov</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.2.4</Version>
+    <Version>0.3.0</Version>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
   </PropertyGroup>
 
